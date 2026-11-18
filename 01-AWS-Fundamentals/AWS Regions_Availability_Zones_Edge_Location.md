@@ -16,6 +16,7 @@ Consider these 4 factors:
    - Follow data governance and legal requirements.
    - Choose a Region that meets data residency requirements.
    - AWS generally keeps customer content in the selected Region unless services are configured to transfer or replicate it elsewhere. Always check service-specific behavior.
+
 **2. Proximity (Latency)**
    - Choose a Region close to your customers.
    - Shorter distance usually means lower network latency.
@@ -70,12 +71,14 @@ Example
 Example: A website hosted in Frankfurt can serve cached images to users in India through nearby CloudFront edge locations.
 
 **4. Global vs Regional AWS Services**
+
 Global Services
 These services have global components or scope:
 - IAM – Identity and Access Management; manages users, roles and permissions.
 - Route 53 – DNS service; routes domain requests to applications.
 - CloudFront – Content Delivery Network (CDN); distributes content globally.
 - AWS WAF – Protects web applications; global scope for CloudFront, Regional scope for supported Regional resources.
+
 Regional Services
 These services operate within selected AWS Regions:
 - Amazon EC2 – Virtual servers in the cloud. Individual instances run in specific AZs.
