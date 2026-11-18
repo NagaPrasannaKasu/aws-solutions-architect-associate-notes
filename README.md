@@ -21,7 +21,7 @@ Source: [AWS SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/l
 - [Well Architected Framework](<01-AWS-Fundamentals/Well-Architected-Framework.md>)
 - [AWS Organizations and Control Tower](<01-AWS-Fundamentals/AWS-Organizations-and-Control-Tower.md>)
 
-### 02 Compute
+<!-- ### 02 Compute
 - [EC2](<02-Compute/EC2.md>)
 - [EC2 Purchasing Options](<02-Compute/EC2-Purchasing-Options.md>)
 - [Auto Scaling](<02-Compute/Auto-Scaling.md>)
@@ -82,13 +82,13 @@ Source: [AWS SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/l
 - [VPC Network Design](<11-Hands-On-Labs/VPC-Network-Design.md>)
 - [Highly Available Web Tier](<11-Hands-On-Labs/Highly-Available-Web-Tier.md>)
 
-<!-- ## Study principles
+ ## Study principles
 
 - Explain design decisions: requirements → service choice → trade-offs → failure modes → cost.
 - Distinguish verified AWS facts from your own opinions and untested assumptions.
 - Prefer official AWS documentation and record a **last verified** date for time-sensitive claims.
 - Do not publish real exam questions, paid course content, credentials, account IDs, or confidential material.
-- Labs must be planned and budgeted before deployment; examples here are **not** claimed to be executed. -->
+- Labs must be planned and budgeted before deployment; examples here are **not** claimed to be executed. 
 
 ## Sources and attribution
 
@@ -96,4 +96,4 @@ Source: [AWS SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/l
 
 ## Contributing and licensing
 
-Personal study portfolio. See [CONTRIBUTING.md](CONTRIBUTING.md) and [LICENSE](LICENSE). Cite sources, use original diagrams and explanations, and review any external contribution before merging.
+Personal study portfolio. See [CONTRIBUTING.md](CONTRIBUTING.md) and [LICENSE](LICENSE). Cite sources, use original diagrams and explanations, and review any external contribution before merging. -->
