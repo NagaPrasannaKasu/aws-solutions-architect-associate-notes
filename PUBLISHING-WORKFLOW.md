@@ -1,4 +1,4 @@
-# Google Docs → GitHub → articles/social
+<!-- # Google Docs → GitHub → articles/social
 
 ## Migrating notes
 1. Keep Google Docs for raw captures and personal revision.
@@ -19,4 +19,4 @@
 - [ ] Pricing and changing service features verified recently.
 - [ ] Any lab outputs described accurately as planned vs executed.
 - [ ] Sources and caveats included.
-- [ ] Spelling, Markdown links, and diagrams checked.
+- [ ] Spelling, Markdown links, and diagrams checked. -->
