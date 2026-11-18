@@ -1,4 +1,4 @@
-# Study progress tracker
+<!-- # Study progress tracker
 
 Status legend: ⬜ Not started · 🟡 Draft · ✅ Reviewed. Update only after reviewing notes and documentation.
 
@@ -18,4 +18,4 @@ Status legend: ⬜ Not started · 🟡 Draft · ✅ Reviewed. Update only after 
 
 | Week | Topics reviewed | Practice weaknesses | Next focus |
 | --- | --- | --- | --- |
-| YYYY-MM-DD | — | — | — |
+| YYYY-MM-DD | — | — | — |  -->
