@@ -1,4 +1,4 @@
-# AWS Global Infrastructure – Simplified Notes
+# AWS Global Infrastructure – Regions, Availability Zone, Edge Location
 
 ## 1. AWS Regions
 
