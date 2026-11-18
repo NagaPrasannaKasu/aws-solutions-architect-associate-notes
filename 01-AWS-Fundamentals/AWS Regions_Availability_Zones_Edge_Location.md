@@ -11,6 +11,7 @@
 **How to choose an AWS Region?**
 
 Consider these 4 factors:
+
 **1. Compliance (Legal Requirements)**
    - Follow data governance and legal requirements.
    - Choose a Region that meets data residency requirements.
