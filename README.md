@@ -2,14 +2,6 @@
 
 > Independent study notes, architectural trade-offs, diagrams, and safe lab plans. **Unofficial** study resource; not affiliated with or endorsed by AWS.
 
-## Start here
-
-1. Read [the roadmap](STUDY-ROADMAP.md) and [exam-domain checklist](EXAM-DOMAINS.md).
-2. Duplicate [the note template](templates/TOPIC-TEMPLATE.md) to document each completed topic.
-3. Open the completed [Amazon S3 storage classes example](03-Storage/S3-Storage-Classes.md).
-4. Track status in [PROGRESS.md](PROGRESS.md); log actual experiments in [labs/README.md](labs/README.md).
-5. Follow [the publishing workflow](PUBLISHING-WORKFLOW.md) to migrate your Google Docs notes.
-
 ## Official exam blueprint (verified 2026-11-18)
 
 | Exam domain | Weight |
@@ -90,13 +82,13 @@ Source: [AWS SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/l
 - [VPC Network Design](<11-Hands-On-Labs/VPC-Network-Design.md>)
 - [Highly Available Web Tier](<11-Hands-On-Labs/Highly-Available-Web-Tier.md>)
 
-## Study principles
+<!-- ## Study principles
 
 - Explain design decisions: requirements → service choice → trade-offs → failure modes → cost.
 - Distinguish verified AWS facts from your own opinions and untested assumptions.
 - Prefer official AWS documentation and record a **last verified** date for time-sensitive claims.
 - Do not publish real exam questions, paid course content, credentials, account IDs, or confidential material.
-- Labs must be planned and budgeted before deployment; examples here are **not** claimed to be executed.
+- Labs must be planned and budgeted before deployment; examples here are **not** claimed to be executed. -->
 
 ## Sources and attribution
 
