@@ -2,26 +2,15 @@
 
 > Independent study notes, architectural trade-offs, diagrams, and safe lab plans. **Unofficial** study resource; not affiliated with or endorsed by AWS.
 
-## Official exam blueprint (verified 2026-11-18)
-
-| Exam domain | Weight |
-| --- | ---: |
-| Design Secure Architectures | 30% |
-| Design Resilient Architectures | 26% |
-| Design High-Performing Architectures | 24% |
-| Design Cost-Optimized Architectures | 20% |
-
-Source: [AWS SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03.html). See the [AWS revision history](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-revisions.html) when reviewing updates. The topic index is an **editorial learning plan**, not an AWS-provided topic-by-topic syllabus.
-
 ## Topic index
 
 ### 01 AWS-Fundamentals
-- [Global Infrastructure](<01-AWS-Fundamentals/Global-Infrastructure.md>)
+<!-- - [Global Infrastructure](<01-AWS-Fundamentals/Global-Infrastructure.md>)
 - [Shared Responsibility Model](<01-AWS-Fundamentals/Shared-Responsibility-Model.md>)
 - [Well Architected Framework](<01-AWS-Fundamentals/Well-Architected-Framework.md>)
 - [AWS Organizations and Control Tower](<01-AWS-Fundamentals/AWS-Organizations-and-Control-Tower.md>)
 
-<!-- ### 02 Compute
+  ### 02 Compute
 - [EC2](<02-Compute/EC2.md>)
 - [EC2 Purchasing Options](<02-Compute/EC2-Purchasing-Options.md>)
 - [Auto Scaling](<02-Compute/Auto-Scaling.md>)
