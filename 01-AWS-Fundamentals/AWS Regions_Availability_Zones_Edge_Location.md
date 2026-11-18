@@ -20,14 +20,17 @@ Consider these 4 factors:
    - Choose a Region close to your customers.
    - Shorter distance usually means lower network latency.
    - Example: For customers in Germany, Frankfurt may offer lower latency than Mumbai.
+
 **3. Available Services**
    - Not all AWS services and features are available in every Region.
    - New AWS services usually launch in selected Regions first.
    - Check service availability before selecting a Region.
+
 **4. Pricing**
    - AWS service pricing can differ between Regions.
    - Compare prices using official AWS pricing pages.
    - Choose a Region that balances cost, compliance and performance.
+
 **2. Availability Zones (AZs)**
 - An Availability Zone is an isolated location within an AWS Region.
 - Every AWS Region has at least 3 Availability Zones.
