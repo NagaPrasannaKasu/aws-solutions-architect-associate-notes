@@ -1,4 +1,4 @@
-# AWS Solutions Architect Associate (SAA-C03) — Learning Portfolio
+# AWS Solutions Architect Associate (SAA-C03) — Learning Portfolio (In Progress...)
 
 > Independent study notes, architectural trade-offs, diagrams, and safe lab plans. **Unofficial** study resource; not affiliated with or endorsed by AWS.
 
