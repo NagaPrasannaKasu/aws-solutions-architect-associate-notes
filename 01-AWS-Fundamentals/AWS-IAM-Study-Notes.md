@@ -81,13 +81,6 @@ IAM identities are used to represent people, applications, or services that need
 | `Resource` | Required in a typical permissions statement | Identifies the AWS resources to which the actions apply. The JSON key is singular: `Resource`. |
 | `Condition` | Optional | Adds conditions that must be met for the statement to apply, such as source IP or MFA status. |
 
-### Important policy clarification: Principal
-
-- Your original notes describe `Principal` as the account, user, or role to which a policy is applied.
-- More precisely, **identity-based policies** are attached to a user, group, or role, so the identity is already implied. These policies do not contain a `Principal` element.
-- **Resource-based policies** specify a `Principal` because they are attached to a resource and must identify who can access that resource.
-- A role's **trust policy** is a resource-based policy that specifies which principals are allowed to assume the role.
-
 ### Example: simple identity-based policy
 
 This example allows an identity to list one S3 bucket and read objects inside it. The policy is illustrative; replace the example bucket name with a real bucket when practising.
@@ -150,35 +143,7 @@ Common MFA options include:
 -  Hardware key Fob MFA device
 -  Hardware key Fob MFA device for aws GovCloud(US)
 
-## 5. Ways to Access AWS
-
-### AWS Management Console
-
-- The console is the browser-based graphical interface for managing AWS resources.
-- Users normally sign in with a username or email-based identity and password, and complete MFA when it is enabled or required.
-
-### AWS Command Line Interface (CLI)
-
-- The AWS CLI lets you manage AWS services by running commands in a terminal.
-- It is useful for automation, scripts, and repeatable administration tasks.
-- The CLI must be configured with valid AWS credentials or an authentication method such as IAM Identity Center sign-in.
-
-### AWS Software Development Kits (SDKs)
-
-- AWS SDKs let application code call AWS services using supported programming languages.
-- Applications use an AWS credential provider to obtain credentials when making API requests.
-
-### Access keys and credential safety
-
-- A long-term IAM user access key consists of an **access key ID** and a **secret access key**.
-- Both parts are used to sign programmatic requests from tools such as the CLI and SDKs.
-- The secret access key is shown only when the key is created. Store it securely.
-- Never share access keys, commit them to GitHub, place them directly in source code, or include them in screenshots or notes.
-- If a key is exposed, deactivate or delete it and replace it as appropriate.
-- **Preferred approach:** use temporary credentials from IAM roles or IAM Identity Center instead of long-term IAM user access keys whenever possible.
-- For applications running on EC2 or Lambda, attach an appropriate IAM role rather than storing permanent access keys in the application.
-
-## 6. IAM Roles for AWS Services
+## 5. IAM Roles for AWS Services
 
 - Some AWS services need permission to call other AWS services on your behalf.
 - Instead of saving a user's access keys in the service or application, create and assign an IAM role with the required permissions.
@@ -196,7 +161,7 @@ Common MFA options include:
 4. The application on the instance obtains temporary credentials from the role.
 5. The application uses those credentials to call S3 without storing long-term access keys.
 
-## 7. IAM Security and Audit Tools
+## 6. IAM Security and Audit Tools
 
 ### IAM Credential Report (account-level)
 
@@ -212,7 +177,7 @@ Common MFA options include:
 - Administrators can use it as one input when reviewing and reducing permissions.
 - Do not remove a permission solely because it appears unused without checking the workload and business requirements.
 
-## 8. IAM Best Practices - Quick Checklist
+## 7. IAM Best Practices - Quick Checklist
 
 - Protect the root user; enable MFA and avoid using it for everyday work.
 - Do not share passwords, secret access keys, or MFA devices.
@@ -225,7 +190,7 @@ Common MFA options include:
 - Use MFA for interactive access.
 - Never commit secrets or access keys to a public or private source-code repository.
 
-## 9. AWS SAA-C03 Exam Reminders
+## 8. AWS SAA-C03 Exam Reminders
 
 - **IAM is a global service**; it is not created separately in each Region.
 - **Users** are identities; **groups** organize users; **roles** are assumed to obtain temporary credentials.
