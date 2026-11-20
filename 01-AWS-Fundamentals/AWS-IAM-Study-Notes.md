@@ -1,6 +1,5 @@
 # AWS Identity and Access Management (IAM) - Study Notes
 
-> AWS SAA-C03 preparation notes. These notes expand the points in the supplied `IAM.txt` reference and add a few clarifications to help avoid common exam misunderstandings.
 
 ## 1. What is AWS IAM?
 
@@ -146,9 +145,10 @@ This example allows an identity to list one S3 bucket and read objects inside it
 
 Common MFA options include:
 
-- **Virtual MFA device:** an authenticator application on a phone or other device that generates time-based one-time passwords (TOTP).
-- **Hardware TOTP token:** a physical device that generates one-time codes.
-- **FIDO security key / passkey:** a phishing-resistant authentication option based on public-key cryptography.
+-  Virtual MFA device
+-  universal 2nd factor U2F security key
+-  Hardware key Fob MFA device
+-  Hardware key Fob MFA device for aws GovCloud(US)
 
 ## 5. Ways to Access AWS
 
@@ -240,45 +240,3 @@ Common MFA options include:
 - Credential Report = account-level credential status.
 - Access Advisor = service access / last-accessed information used during permission reviews.
 
-## 10. Quick Self-Check
-
-1. **Which IAM identity is created automatically with an AWS account?**  
-   The root user.
-
-2. **Can an IAM group contain another IAM group?**  
-   No. IAM groups contain users only.
-
-3. **What is the difference between an IAM user and an IAM role?**  
-   An IAM user is an identity in the account; a role is assumed by a trusted identity or service and provides temporary credentials.
-
-4. **Which policy element specifies Allow or Deny?**  
-   `Effect`.
-
-5. **Does a normal identity-based policy contain `Principal`?**  
-   No. The attached identity is implied. Resource-based policies and role trust policies specify a Principal.
-
-6. **An EC2 application needs to read objects from S3. What is the recommended approach?**  
-   Attach an IAM role to the EC2 instance with least-privilege S3 permissions.
-
-7. **Which tool gives an account-level view of IAM credential status?**  
-   IAM Credential Report.
-
-8. **Which IAM feature helps identify services a user or role has accessed?**  
-   Access Advisor / Last Accessed Information.
-
-## 11. Official AWS References
-
-- [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
-- [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
-- [IAM JSON policy element reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
-- [Root user best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)
-- [Multi-factor authentication in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
-- [Set an account password policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)
-- [Manage access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
-- [IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-- [Generate credential reports](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)
-- [Reviewing last accessed information](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-reduce-permissions-last-accessed.html)
-
----
-
-**Study tip:** First understand the difference between users, groups, roles, and policies. Then practise reading simple JSON policies and deciding whether a user, role, or service should receive the permission. These distinctions appear frequently in AWS architecture and security scenarios.
