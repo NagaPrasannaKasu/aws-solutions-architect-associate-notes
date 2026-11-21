@@ -1,8 +1,4 @@
-# AWS EC2 Purchase Options – Simplified Study Notes
-
-These notes explain the EC2 purchasing options from the original rough notes in a clearer, easy-to-revise format.
-
-> **Pricing note:** Discount percentages below are the indicative figures recorded in the original notes. Actual discounts and prices depend on the current AWS offer, Region, instance family, operating system, and commitment details. Check AWS pricing before making a purchasing decision.
+# AWS EC2 Purchase Options
 
 ## 1. On-Demand Instances
 
@@ -20,7 +16,7 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 ## 2. Reserved Instances (1 or 3 years)
 
 - Commit to using specified EC2 capacity attributes for a term of **1 year or 3 years**.
-- The original notes record discounts of up to **72%** compared with On-Demand pricing.
+- <discounts of up to **72%** compared with On-Demand pricing.
 - The reservation is based on attributes such as:
   - Instance type.
   - AWS Region.
@@ -39,7 +35,7 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 ### 2.1 Convertible Reserved Instances
 
 - A type of Reserved Instance that provides more flexibility to change the reservation configuration.
-- The original notes record discounts of up to **66%**.
+- Discounts of up to **66%**.
 - Changes may include:
   - Instance family or type.
   - Operating system / platform.
@@ -53,8 +49,8 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 
 - Commit to a certain amount of eligible compute usage, measured in **dollars per hour**, for 1 or 3 years.
 - You commit to a level of spend rather than reserving one exact instance configuration.
-- The original notes record discounts of up to **72%**.
-- The notes describe the commitment as being tied to a specific instance family and AWS Region; check the selected Savings Plan type because flexibility differs by plan type.
+- Discounts of up to **72%**.
+- Tied to a specific instance family and AWS Region.
 - Suitable for long-running workloads with predictable baseline usage.
 
 **Remember:** Commit to a consistent hourly spend instead of reserving a particular instance.
@@ -62,7 +58,7 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 ## 4. Spot Instances
 
 - Use spare AWS EC2 capacity at a much lower price than On-Demand.
-- The original notes record discounts of up to **90%**.
+- Discounts of up to **90%**.
 - AWS can interrupt a Spot Instance when it needs the capacity back, so the instance may not be available for the full time you want.
 - Suitable for flexible, interruption-tolerant workloads, such as:
   - Batch jobs.
@@ -87,7 +83,7 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 - Purchase options:
   - **On-Demand:** Pay for the Dedicated Host while it is active.
   - **Reserved:** Commit for 1 or 3 years, with No Upfront, Partial Upfront, or All Upfront payment options.
-- The original notes describe Dedicated Hosts as one of the most expensive EC2 purchasing options.
+- Dedicated Hosts as one of the most expensive EC2 purchasing options.
 - Suitable for workloads with specific licensing, compliance, or physical-server placement requirements.
 
 **Remember:** A whole physical server is dedicated to you, with greater control over placement and licensing.
@@ -109,12 +105,8 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 - Can be created or cancelled at any time; there is no 1-year or 3-year term commitment.
 - A Capacity Reservation does **not** provide a billing discount.
 - You are charged at the applicable On-Demand rate whether or not you launch an instance into the reserved capacity.
-- The original notes mention combining Capacity Reservations with Regional Reserved Instances or Savings Plans:
-  - Capacity Reservation helps with **capacity availability**.
-  - Reserved Instances or Savings Plans may help with **eligible usage discounts**.
-- Suitable for short-term or ongoing workloads that must have capacity available in a particular AZ.
-
-**Remember:** Reserves capacity in a chosen AZ; it does not itself reduce the price.
+- Combine regional reserved instnces and savings plan to benefit from billing discounts.
+- Suitable for short-term or ongoing workloads, uninterrepted workloads that needs to be in a specific AZ.
 
 ## 8. Spot Fleet
 
@@ -132,7 +124,7 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 | **Lowest Price** | Selects capacity from the pool with the lowest price. | Cost optimisation for flexible, short workloads. |
 | **Diversified** | Spreads instances across several pools. | Better resilience because capacity is distributed across pools. |
 | **Capacity Optimized** | Selects pools based on available capacity. | Helps reduce the chance of interruption due to limited capacity. |
-| **Price Capacity Optimized** | Prioritises pools with the strongest available capacity, then considers price. | Balances capacity availability and cost; the original notes describe this as the recommended general-purpose choice. |
+| **Price Capacity Optimized** | Prioritises pools with the strongest(highest) available capacity, then considers lowest price. | Balances capacity availability and cost; this as the recommended general-purpose choice. |
 
 **Remember:** Spot Fleet can select from multiple pools automatically, according to your target capacity and allocation strategy.
 
@@ -160,7 +152,7 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 - **Dedicated Hosts:** Entire physical server dedicated to you; useful for certain BYOL and compliance needs.
 - **Dedicated Instances:** Run on hardware dedicated to one AWS customer, without Dedicated Host placement control.
 - **Capacity Reservations:** Reserve capacity in a specific AZ; no billing discount by themselves.
-- **Spot Fleet:** Uses multiple launch pools and an allocation strategy to meet target capacity.
+- **Spot Fleet:** Uses multiple launch pools and an allocation strategy to meet target capacity. Spot Fleet allows us to automatically req spot instances with lowest price, so it means it gives us extra savings bcz it choose the right Spot insatnce pool.
 
 ## 11. Exam Scenario Clues
 
@@ -173,5 +165,3 @@ These notes explain the EC2 purchasing options from the original rough notes in 
 - A workload can use several Spot pools and needs automated capacity selection → **Spot Fleet**.
 
 ---
-
-*Study note: These notes are based on the supplied rough notes. Treat discount percentages as indicative rather than guaranteed, and check current AWS documentation and pricing for exact terms before purchasing.*
