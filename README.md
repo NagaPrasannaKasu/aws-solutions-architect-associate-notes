@@ -8,6 +8,8 @@
 - [AWS Global Infrastructure](<01-AWS-Fundamentals/AWS-Regions_Availability_Zone_Edge_Location.md>)
 - [AWS IAM](<01-AWS-Fundamentals/AWS-IAM.md>)
 - [CLI-SDK-CloudShell](<01-AWS-Fundamentals/CLI-SDK-CloudShell.md>)
+- [AWS EC2](<01-AWS-Fundamentals/AWS-EC2.md>)
+- [EC2-Purchase-Options](<01-AWS-Fundamentals/AWS-EC2-Purchase-Options.md>)
 <!-- - [Shared Responsibility Model](<01-AWS-Fundamentals/Shared-Responsibility-Model.md>)
 - [Well Architected Framework](<01-AWS-Fundamentals/Well-Architected-Framework.md>)
 - [AWS Organizations and Control Tower](<01-AWS-Fundamentals/AWS-Organizations-and-Control-Tower.md>)
