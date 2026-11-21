@@ -1,4 +1,4 @@
-# Amazon EC2 - Simplified Study Notes
+# Amazon EC2 - Storage Options, Instance Types
 
 ## 1. What is Amazon EC2?
 
